@@ -2,7 +2,6 @@ class TabLink {
   constructor(element) {
     // Assign this.element to the passed in DOM element
     this.element = element;
-    console.log(this.element);
     // Get the custom data attribute on the Link
     this.data = this.element.dataset;
     // console.log(this.data);
