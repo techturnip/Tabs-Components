@@ -1,3 +1,11 @@
+class Tabs {
+  constructor(element) {
+    this.element = element;
+    this.tab = new TabLink(this.element);
+    console.log(this.tab)
+  }
+}
+
 class TabLink {
   constructor(element) {
     // Assign this.element to the passed in DOM element
@@ -60,4 +68,4 @@ class TabItem {
 
 let links = document
   .querySelectorAll('.tabs-link')
-  .forEach((link, i) => new TabLink(link, i));
+  .forEach((tab) => new Tabs(tab));
